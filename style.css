@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #f2f2f2;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+
+header {
+    background: #4a6fa5;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 / 3;
+}
+
+.add-btn {
+    padding: 8px 14px;
+    border: none;
+    background: white;
+    color: #4a6fa5;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+aside {
+    background: #2f3e46;
+    color: white;
+    padding: 20px 10px;
+
+}
+ nav ul{
+      list-style-type: none;
+      padding: 15px 0;
+      text-align: center;
+    }
+nav ul li {
+        padding: 10px;
+        margin-right: 15px;
+        color: #fff;
+}
+ nav ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+main {
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    border-radius: 8px;
+}
+.info-table{
+        background-color: azure;
+            width: 100%;
+            border-collapse: collapse;  
+            border-radius: 8px;    
+            overflow: hidden;       
+
+        }
+        .info-table th,
+        .info-table td{
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+
+        }
+        .info-table th{
+            background-color: #3498db;
+            color: white;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        .info-table tr:nth-child(even) td{
+            background-color: #afbdf6;
+        }
+         .info-table tr:first-child th {
+            border-top: none;
+        }
+
+        .info-table tr:last-child td {
+            border-bottom: none;
+            
+        }
+    footer{
+        background-color: #34495e;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 100% ;
+    }
